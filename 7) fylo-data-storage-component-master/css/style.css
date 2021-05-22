@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    --pblue: hsl(243, 100%, 93%);
+    --gblue: hsl(229, 7%, 55%);
+    --dblue: hsl(228, 56%, 26%);
+    --vdblue: hsl(229, 57%, 11%);
+    
+}
+
+* {
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-color: var(--vdblue);
+    position: relative;
+    overflow-x: hidden;
+    
+
+
+
+}
+
+.bg-mobile img {
+    display: none;
+}
+
+.bg-desktop img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.container .box-1 {
+    padding: 38px;
+    background-color: var(--dblue);
+    width: 348px;
+    height: 200px;
+    border-radius: 10px 100px 10px 10px;
+    margin-right: 40px;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+.container .box-1 .icons {
+    display: flex;
+    margin-top: 2em;
+}
+
+.container .box-1 .icons .icon-box:hover {
+    box-shadow: 1px 1px 8px rgba(224, 255, 255, 0.26);
+}
+
+.container .box-1 .icons .icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: var(--vdblue);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    
+}
+
+.container .box-2 {
+    background-color: var(--dblue);
+    border-radius: 10px;
+    width: 538px;
+    height: 160px;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 35px;
+}
+
+.container .box-2 .top {
+    margin-bottom: 1em;
+}
+
+.container .box-2 .top p {
+    color: var(--pblue);
+    letter-spacing: 0.7px;
+    
+}
+
+.container .box-2 .top p span {
+    font-weight: 700;
+    
+}
+
+.container .box-2 .bar {
+    width: 100%;
+    height: 20px;
+    background-color: #151E47;
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 0.7em;
+}
+
+.container .box-2 .bar .bar-inside {
+    height: 13px;
+    width: 80%;
+    border-radius: 6px;
+    background: var(--gradient);
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+
+}
+
+.box-2 .bar .bar-inside .circle {
+    width: 10px;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 50%;
+   
+}
+
+.container .box-2 .bottom {
+    display: flex;
+    justify-content: space-between;
+    color: var(--pblue);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.container .box-2 .info {
+    background-color: whitesmoke;
+    border-radius: 10px 10px 0 10px;
+    position: absolute;
+    right: 40px;
+    top: -40px;
+    width: 180px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 9;
+}
+
+
+
+.container .box-2 .info span {
+    font-size: 12px;
+    color: var(--gblue);
+    
+}
+
+.container .box-2 .triangle {
+    width: 0;
+    height: 0;
+    border-width: 0 18px 18px 0;
+    border-color: transparent whitesmoke transparent transparent;
+    border-style: solid;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+@media (max-width: 1040px) {
+
+    body {
+        padding: 0px 25px;
+        overflow: hidden;
+        
+    }
+
+
+    .bg-mobile img {
+        display: initial;
+        position: absolute;
+        left: 0;
+        
+        width: 100%;
+        height: auto;
+    }
+
+    .bg-desktop img {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .box-1 {
+        width: 100%;
+        margin-right: 0px;
+          
+    }
+
+    .container .box-2 {
+        width: 100%;
+  
+    }
+
+    .container .box-2 .triangle {
+        display: none;
+    }
+
+    .container .box-2 .info {
+        border-radius: 10px;
+        position: absolute;
+        top: 75%;
+
+        
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --vdb: hsl(243, 87%, 12%);
+  --dblue: hsl(238, 22%, 44%);
+
+  --bblue: hsl(224, 93%, 58%);
+  --mcyan: hsl(170, 45%, 43%);
+
+  --lgblue: hsl(240, 75%, 98%);
+  --lgray: hsl(0, 0%, 75%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  color: var(--vdb);
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: var(--lgblue);
+}
+
+button {
+  background-color: var(--bblue);
+  color: var(--lgblue);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 23px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.btn {
+  padding: 1em 2.5em;
+}
+
+.btn-top {
+  padding: 1em 4em;
+}
+
+.mail-top {
+  padding: 1em;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.493);
+  display: inline-block;
+  width: 290px;
+  max-width: 290px;
+  color: var(--lgray);
+  font-family: "Raleway", sans-serif;
+  margin-right: 1em;
+  box-shadow: 0 10px 23px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  place-items: center;
+}
+
+/* HEADER */
+
+.container > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em 0em;
+  width: 89%;
+}
+
+.container > .header .nav {
+  display: flex;
+  gap: 4em;
+}
+
+.container > .header .nav > a {
+  color: var(--vdb);
+  font-family: "Raleway", sans-serif;
+}
+
+.container > .header .nav > a:hover {
+  color: var(--dblue);
+}
+
+/* HERO */
+
+.container > .hero {
+  display: flex;
+  width: 100%;
+  height: 86vh;
+  background: url(/images/bg-curve-desktop.svg) no-repeat;
+  background-position: bottom;
+}
+
+.container > .hero > .hero-left {
+  width: 100%;
+  padding: 4em 0em 0em 5em;
+}
+
+.container > .hero > .hero-left > p {
+  max-width: 90%;
+  font-size: 1.1rem;
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+}
+
+.container > .hero > .hero-right {
+  padding: 1em 5em 0em 0em;
+  width: 100%;
+}
+
+/* INFO */
+
+.container > .info {
+  width: 100%;
+  display: flex;
+  background-color: var(--lgblue);
+  padding: 4em 0em;
+}
+
+.container > .info > .info-left {
+  width: 110%;
+  padding: 0em 0em 2em 5em;
+}
+
+.container > .info > .info-left > .info-left-card {
+  background-color: #fff;
+  max-width: 300px;
+  margin-top: 3em;
+  border-radius: 6px;
+  box-shadow: 0 10px 23px rgba(0, 0, 0, 0.1);
+  padding: 1em 2em;
+}
+
+.container > .info > .info-left > .info-left-card > p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.container > .info > .info-left > .info-left-card > p::before {
+  content: url(/images/icon-quotes.svg);
+}
+
+.container > .info > .info-left > .info-left-card > .avatar {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.container > .info > .info-left > .info-left-card > .avatar > .card-avatar {
+  max-width: 30px;
+  border-radius: 50%;
+}
+
+.container
+  > .info
+  > .info-left
+  > .info-left-card
+  > .avatar
+  > .card-avatar
+  > img {
+  border-radius: 50%;
+}
+
+.card-bold {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.card-title {
+  font-size: 0.7rem;
+  margin-top: 0;
+}
+
+.container > .info > .info-left > p {
+  max-width: 75%;
+}
+
+.container > .info > .info-left > a {
+  color: var(--mcyan);
+  border-bottom: 1px solid var(--mcyan);
+}
+
+.container > .info > .info-left > a::after {
+  content: url(/images/icon-arrow.svg);
+  margin-left: 0.3em;
+}
+
+.container > .info > .info-right {
+  width: 90%;
+  padding: 0em 5em 2em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIL */
+.container > .mail {
+  background-color: var(--dblue);
+  width: 100%;
+  color: var(--lgblue);
+  display: flex;
+  padding: 5em 0em;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > .mail > .mail-text {
+  padding-left: 5em;
+}
+
+.container > .mail > .mail-text > p {
+  max-width: 65%;
+  line-height: 1.5;
+}
+
+.container > .mail > .mail-contact {
+  padding-right: 5em;
+  width: 50%;
+}
+
+.container > .mail > .mail-contact > input {
+  width: 90%;
+  padding: 1em;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin-bottom: 1em;
+  box-shadow: 0 10px 23px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+
+.container > .footer {
+  background-color: var(--vdb);
+  width: 100%;
+  color: var(--lgblue);
+  padding: 7em 0em 5em 0em;
+  display: grid;
+}
+
+.container .footer a {
+  color: var(--lgblue);
+}
+
+.container .footer a:hover {
+  color: var(--bblue);
+}
+
+.foot-logo {
+  padding: 0em 5em;
+}
+
+.container .footer .foot-box {
+  display: flex;
+  gap: 3em;
+  justify-content: space-between;
+  padding: 1em 5em;
+}
+
+.phone,
+.f-mail {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.foot-2 {
+  display: flex;
+  gap: 3em;
+}
+
+.foot-2 > .foot-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.foot-3 {
+  display: flex;
+  gap: 1em;
+}
+
+.fab {
+  border: 1px solid var(--lgblue);
+  border-radius: 50%;
+  padding: 0.5em 0.6em;
+}
+
+.fab:hover {
+  border-color: var(--bblue);
+}
+
+.container > footer {
+  background-color: var(--vdb);
+  width: 100%;
+  color: var(--lgblue);
+}
+
+/* MEDIA */
+
+@media (max-width: 1000px) {
+  body {
+    width: 100vw;
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container > .header {
+    margin-bottom: 5em;
+    gap: 1em;
+  }
+
+  .container > .header .nav {
+    gap: 1em;
+  }
+
+  .container > .hero {
+    flex-direction: column-reverse;
+    width: 80%;
+    text-align: center;
+  }
+
+  .container > .hero > .hero-left {
+    padding: initial;
+  }
+
+  .hero-left-mail > button {
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .container > .hero > .hero-right {
+    padding: initial;
+  }
+
+  .container > .info {
+    flex-direction: column-reverse;
+    width: 80%;
+  }
+
+  .container > .info > .info-right {
+    padding: initial;
+  }
+
+  .container > .info > .info-left {
+    padding: initial;
+  }
+
+  .container > .mail {
+    flex-direction: column;
+  }
+
+  .container > .mail > .mail-text {
+    text-align: center;
+    padding-right: 5em;
+  }
+
+  .container > .mail > .mail-text > p {
+    max-width: initial;
+  }
+
+  .container > .footer > .foot-box {
+    flex-direction: column;
+  }
+
+  .container > .footer > .foot-box > .foot-2 {
+    flex-direction: column;
+  }
+
+  .container > .footer > .foot-box > .foot-3 {
+    align-self: center;
+  }
+}
