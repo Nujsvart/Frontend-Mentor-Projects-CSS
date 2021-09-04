@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AEAA,OAAO,CAAC,mFAAI;ADqBZ,AAAA,IAAI,CAAC;EACD,gBAAgB,EAXZ,KAAgB;EAYpB,WAAW,EAAE,mBAAmB;CACnC",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_base.scss",
+        "../sass/_typography.scss",
+        "../sass/_app.scss",
+        "../sass/_header.scss",
+        "../sass/_chat.scss",
+        "../sass/_hero.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
