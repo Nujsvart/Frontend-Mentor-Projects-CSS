@@ -1,0 +1,53 @@
+.price {
+  background-image: linear-gradient(
+    160deg,
+    $Light-magenta 0%,
+    $light-violet 90%
+  );
+  color: $white;
+  margin-bottom: 1rem;
+  max-width: 75%;
+  padding: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    &--circle {
+      margin-right: 1rem;
+      display: inline-block;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      border: 1px solid $very-light-magenta;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    &--text {
+      margin-right: auto;
+      font-size: 1rem;
+      color: hsl(293, 37%, 91%);
+    }
+
+    &--nm {
+      margin-right: 1rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+  }
+}

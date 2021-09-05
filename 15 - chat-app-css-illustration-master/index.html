@@ -26,11 +26,10 @@
     </style>
   </head>
   <body>
+    <div class="bg bg--left"></div>
+    <div class="bg bg--right"></div>
     <div class="container">
-      <div class="bg bg--left"></div>
-      <div class="bg bg--right"></div>
-
-      <div class="app">
+      <section class="app">
         <div class="header">
           <figure class="header__avatar">
             <img src="/images/avatar.jpg" alt="avatar" />
@@ -43,34 +42,34 @@
         </div>
 
         <div class="chat">
-          <div class="chat__send">
+          <div class="send">
             <p>That sounds great. I’d be happy with that.</p>
           </div>
 
-          <div class="chat__send">
+          <div class="send">
             <p>Could you send over some pictures of your dog, please?</p>
           </div>
 
-          <div class="chat__rec">
-            <figure class="chat__img">
+          <div class="rec">
+            <figure class="rec__img">
               <img src="/images/dog-image-1.jpg" alt="dog-image-1" />
             </figure>
-            <figure class="chat__img">
+            <figure class="rec__img">
               <img src="/images/dog-image-2.jpg" alt="dog-image-2" />
             </figure>
-            <figure class="chat__img">
+            <figure class="rec__img">
               <img src="/images/dog-image-3.jpg" alt="dog-image-3" />
             </figure>
           </div>
 
-          <div class="chat__rec">
-            <p>Here are a few pictures. She’s a happy girl!</p>
+          <div class="rec">
+            <p class="rec__text-box">Here are a few pictures. She’s a happy girl!</p>
           </div>
-          <div class="chat__rec">
-            <p>Can you make it?</p>
+          <div class="rec">
+            <p class="rec__text-box">Can you make it?</p>
           </div>
 
-          <div class="chat__send">
+          <div class="send">
             <p>
               She looks so happy! The time we discussed works. How long shall I
               take her out for?
@@ -78,33 +77,39 @@
           </div>
         </div>
 
-        <div class="chat__price">
-          <div class="chat__price-circle">form radio label</div>
-          <p class="chat__price--text">30 minute walk</p>
-          <p class="chat__price--nm">$29</p>
+        <div class="price">
+          <form class="price__form">
+            <input type="radio" name="half" id="half">
+            <span class="price__form--circle"></span>
+            <label class="price__form--text" for="half">30 minute walk</label>
+            <p class="price__form--nm">$29</p>
+          </form>
         </div>
 
-        <div class="chat__price">
-          <div class="chat__price-circle"></div>
-          <p class="chat__price--text">1 hour walk</p>
-          <p class="chat__price--nm">$49</p>
+        <div class="price">
+          <form class="price__form">
+            <input type="radio" name="one" id="one">
+            <span class="price__form--circle"></span>
+            <label class="price__form--text" for="one">1 hour walk</label>
+            <p class="price__form--nm">$49</p>
+          </form>
         </div>
 
-        <div class="input">
+        <div class="message">
           <input type="text" placeholder="Type a message…" />
-          <div class="input__icon">form submit button</div>
+          <button type="submit" class="btn">></button>
         </div>
-      </div>
+      </section>
 
-      <div class="hero">
+      <section class="hero">
         <h1>Simple booking</h1>
-        <p class="hero__text">
+        <p class="main-text">
           Stay in touch with our dog walkers through the chat interface. This
           makes it easy to discuss arrangements and make bookings. Once the walk
           has been completed you can rate your walker and book again all through
           the chat.
         </p>
-      </div>
+      </section>
     </div>
 
     <div class="attribution">
