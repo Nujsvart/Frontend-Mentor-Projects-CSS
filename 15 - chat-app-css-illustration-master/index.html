@@ -11,6 +11,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script
+      src="https://kit.fontawesome.com/27e8a5ced0.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/css/main.css" />
 
     <title>Frontend Mentor | Chat App Challenge</title>
@@ -28,90 +32,101 @@
   <body>
     <div class="bg bg--left"></div>
     <div class="bg bg--right"></div>
+
     <div class="container">
-      <section class="app">
-        <div class="header">
-          <figure class="header__avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-          </figure>
-          <div class="header__user">
-            <h2>Samuel Green</h2>
-            <p class="header__user--title">Available to Walk</p>
-          </div>
-          <div class="header__menu"><span>.</span></div>
-        </div>
-
-        <div class="chat">
-          <div class="send">
-            <p>That sounds great. I’d be happy with that.</p>
-          </div>
-
-          <div class="send">
-            <p>Could you send over some pictures of your dog, please?</p>
-          </div>
-
-          <div class="rec">
-            <figure class="rec__img">
-              <img src="/images/dog-image-1.jpg" alt="dog-image-1" />
+      <section class="app-container">
+        <div class="app">
+          <div class="header">
+            <button class="header__btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <figure class="header__avatar">
+              <img src="/images/avatar.jpg" alt="avatar" />
             </figure>
-            <figure class="rec__img">
-              <img src="/images/dog-image-2.jpg" alt="dog-image-2" />
-            </figure>
-            <figure class="rec__img">
-              <img src="/images/dog-image-3.jpg" alt="dog-image-3" />
-            </figure>
+            <div class="header__user">
+              <h2>Samuel Green</h2>
+              <p class="header__user--title">Available to Walk</p>
+            </div>
+            <div class="header__menu"><span></span></div>
           </div>
 
-          <div class="rec">
-            <p class="rec__text-box">Here are a few pictures. She’s a happy girl!</p>
+          <div class="chat">
+            <div class="send">
+              <p>That sounds great. I’d be happy with that.</p>
+            </div>
+
+            <div class="send">
+              <p>Could you send over some pictures of your dog, please?</p>
+            </div>
+
+            <div class="rec">
+              <figure class="rec__img">
+                <img src="/images/dog-image-1.jpg" alt="dog-image-1" />
+              </figure>
+              <figure class="rec__img">
+                <img src="/images/dog-image-2.jpg" alt="dog-image-2" />
+              </figure>
+              <figure class="rec__img">
+                <img src="/images/dog-image-3.jpg" alt="dog-image-3" />
+              </figure>
+            </div>
+
+            <div class="rec">
+              <p class="rec__text-box">
+                Here are a few pictures. She’s a happy girl!
+              </p>
+            </div>
+            <div class="rec">
+              <p class="rec__text-box">Can you make it?</p>
+            </div>
+
+            <div class="send">
+              <p>
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+            </div>
           </div>
-          <div class="rec">
-            <p class="rec__text-box">Can you make it?</p>
+
+          <div class="price mt">
+            <form class="price__form">
+              <input type="radio" name="half" id="half" />
+              <span class="price__form--circle"></span>
+              <label class="price__form--text" for="half">30 minute walk</label>
+              <p class="price__form--nm">$29</p>
+            </form>
           </div>
 
-          <div class="send">
-            <p>
-              She looks so happy! The time we discussed works. How long shall I
-              take her out for?
-            </p>
+          <div class="price">
+            <form class="price__form">
+              <input type="radio" name="one" id="one" />
+              <span class="price__form--circle"></span>
+              <label class="price__form--text" for="one">1 hour walk</label>
+              <p class="price__form--nm">$49</p>
+            </form>
           </div>
-        </div>
 
-        <div class="price">
-          <form class="price__form">
-            <input type="radio" name="half" id="half">
-            <span class="price__form--circle"></span>
-            <label class="price__form--text" for="half">30 minute walk</label>
-            <p class="price__form--nm">$29</p>
-          </form>
-        </div>
-
-        <div class="price">
-          <form class="price__form">
-            <input type="radio" name="one" id="one">
-            <span class="price__form--circle"></span>
-            <label class="price__form--text" for="one">1 hour walk</label>
-            <p class="price__form--nm">$49</p>
-          </form>
-        </div>
-
-        <div class="message">
-          <input type="text" placeholder="Type a message…" />
-          <button type="submit" class="btn">></button>
+          <div class="message">
+            <input type="text" placeholder="Type a message…" autofocus="on" />
+            <button type="submit" class="btn">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="hero">
-        <h1>Simple booking</h1>
-        <p class="main-text">
-          Stay in touch with our dog walkers through the chat interface. This
-          makes it easy to discuss arrangements and make bookings. Once the walk
-          has been completed you can rate your walker and book again all through
-          the chat.
-        </p>
+      <section class="hero-container">
+        <div class="hero">
+          <h1>Simple booking</h1>
+          <p class="main-text">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </div>
       </section>
     </div>
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
