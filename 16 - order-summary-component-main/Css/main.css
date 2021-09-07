@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+img {
+  max-width: 100%;
+  display: block;
+}
+
 *,
 *::before,
 *::after {
@@ -14,19 +19,21 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 500;
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
 }
 
-img {
-  display: block;
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
 }
 
 .container {
   height: 100vh;
   width: 100vw;
+  padding: 4rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,12 +52,33 @@ img {
 
 .card {
   background-color: #fff;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
+  max-width: 50rem;
+  height: 70rem;
   border-radius: 2rem;
   overflow: hidden;
   margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.card .header {
+  width: 100%;
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.card .header > img {
+  width: 100%;
 }
 
 .card .content {
@@ -76,6 +104,7 @@ img {
   font-weight: 500;
   color: #7280a7;
   line-height: 1.5;
+  width: 80%;
 }
 
 .card .content .pricing {
@@ -121,6 +150,8 @@ img {
   background-color: #3829e0;
   color: #f5f7ff;
   width: 100%;
+  -webkit-box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .card .content .btn--submit:hover {
@@ -128,6 +159,7 @@ img {
 }
 
 .card .content .btn--cancel {
+  margin-top: 1.8rem;
   background-color: transparent;
   color: #7280a7;
 }
@@ -140,7 +172,7 @@ img {
   font-size: 2.6rem;
   font-weight: 900;
   color: #1f2f56;
-  margin-bottom: 1rem;
+  margin-bottom: 1.7rem;
 }
 
 .heading-2 {
