@@ -49,4 +49,7 @@ body {
   @include flexCenter;
   flex-direction: column;
   background-color: $pale-blue;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
