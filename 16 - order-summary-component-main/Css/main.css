@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #e0e8ff;
+}
+
+.card {
+  background-color: #fff;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.card .content {
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .content--text {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #7280a7;
+  line-height: 1.5;
+}
+
+.card .content .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f7ff;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.card .content .pricing__icon {
+  margin-right: 1.6rem;
+}
+
+.card .content .pricing__text {
+  margin-right: auto;
+}
+
+.card .content .pricing__text p {
+  color: #7280a7;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.card .content .btn {
+  border: none;
+  outline: none;
+  padding: 1.6rem 3rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.card .content .btn--submit {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  width: 100%;
+}
+
+.card .content .btn--submit:hover {
+  background-color: rgba(110, 100, 221, 0.863);
+}
+
+.card .content .btn--cancel {
+  background-color: transparent;
+  color: #7280a7;
+}
+
+.card .content .btn--cancel:hover {
+  color: #1f2f56;
+}
+
+.heading-1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #1f2f56;
+  margin-bottom: 1rem;
+}
+
+.heading-2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #1f2f56;
+  margin-bottom: .3rem;
+}
+
+a {
+  display: inline-block;
+  color: #3829e0;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgba(110, 100, 221, 0.863);
+}
+/*# sourceMappingURL=main.css.map */

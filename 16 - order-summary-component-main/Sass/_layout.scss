@@ -1,0 +1,78 @@
+.card {
+  background-color: #fff;
+  max-width: min-content;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+
+  .content {
+    padding: 5rem;
+    @include flexCenter;
+    flex-direction: column;
+
+    &--text {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: $desaturated-blue;
+      line-height: 1.5;
+    }
+
+    .pricing {
+      display: flex;
+      align-items: center;
+      background-color: $very-pale-blue;
+      padding: 1.6rem;
+      border-radius: 1rem;
+      width: 100%;
+      margin: 2rem 0;
+
+      &__icon {
+        margin-right: 1.6rem;
+      }
+
+      &__text {
+        margin-right: auto;
+
+        p {
+          color: $desaturated-blue;
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .btn {
+        border: none;
+        outline: none;
+        padding: 1.6rem 3rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        &--submit {
+            background-color: $bright-blue;
+            color: $very-pale-blue;
+            width: 100%;
+
+            &:hover {
+                background-color: hsla(245, 64%, 63%, 0.863);
+            }
+
+        }
+
+        &--cancel {
+            background-color: transparent;
+            color: $desaturated-blue;
+
+            &:hover {
+                color: $dark-blue;
+            }
+        }
+
+
+    }
+  }
+}
